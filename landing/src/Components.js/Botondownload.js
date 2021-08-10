@@ -8,6 +8,11 @@ const useStyles = makeStyles((theme) => ({
     background: "rgb(255,189,51)",
     background: "linear-gradient(90deg, rgba(255,189,51,1) 0%, rgba(255,128,0,1) 100%)",
     margin: theme.spacing(1),
+    borderRadius: "50px",
+    padding: "10px 30px",
+    border: "double 3px white",
+    color: "white",
+
   },
   buttoncontainer: {
       display: "flex",
@@ -26,7 +31,7 @@ export default function Botondownload () {
         <h2>¡Da click aquí</h2>
       <Button
         variant="contained"
-        color="secondary"
+        color="black"
         className={classes.button}
         startIcon={<GetAppIcon />}
       >
