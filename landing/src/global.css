@@ -1,6 +1,22 @@
+@font-face {
+  font-family: 'D-DIN-Bold';
+  src: url('./font/D-DIN-Bold.ttf');
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('./font/RALEWAY-REGULAR.TTF');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+  font-family: 'D-DIN-Bold' !important ;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway' !important;
+}

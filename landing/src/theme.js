@@ -1,29 +1,26 @@
-import { createMuiTheme } from '@material-ui/core/styles';
-
-// const font =  "'Roboto', sans-serif";
-
-const theme = createMuiTheme({
+import { createTheme } from '@material-ui/core/styles';
+const theme = createTheme({
     palette : {
         primary: {
-            main: "#507dbc",
-            dark: "#3626a7",
+            main: "#3b4752",
+            light: "#767e86"
         },
         secondary: {
-            main: "#a1c6ea",
-            light: "#bbd1ea",
+            main: "#febe10",
         },
         background: {
-            default: "#dae3e5"
+            default: "#dae3e5",
+            dark: "#3b4752"
         },
         text: {
-            primary: "#04080f",
-            light: "#dae3e5"
+            primary: "#3b4752",
+            secondary: "#767e86",
+            light: "#dae3e5",
         }
     },
     typography: {
-        // fontFamily: font,
         htmlFontSize: 10,
-    }
+    },
 })
 
 export default theme
