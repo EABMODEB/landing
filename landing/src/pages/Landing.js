@@ -1,5 +1,7 @@
 import React from "react";
+
 import Botondownload from "../Components/Botondownload";
+import Footer from "../Components/Footer";
 
 export default function Landing() {
   // Code
@@ -9,7 +11,7 @@ export default function Landing() {
       <section></section>
       {/* Text Containers: Brandon */}
       <section></section>
-      <Botondownload/>
+      <Botondownload />
       <section></section>
       {/* Carousel: Ramón */}
       <section></section>
@@ -18,12 +20,7 @@ export default function Landing() {
       {/* Form: Joel */}
       <section></section>
       {/* Footer: Brandon */}
-      <footer>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2FRecurso%204.png?alt=media&token=68174d8e-0fc8-4ea8-b8bf-eb0bb377f00c"
-          alt=""
-        />
-      </footer>
+      <Footer />
     </React.Fragment>
   );
 }
