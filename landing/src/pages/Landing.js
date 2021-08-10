@@ -17,7 +17,12 @@ export default function Landing() {
       {/* Form: Joel */}
       <section></section>
       {/* Footer: Brandon */}
-      <footer></footer>
+      <footer>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2FRecurso%204.png?alt=media&token=68174d8e-0fc8-4ea8-b8bf-eb0bb377f00c"
+          alt=""
+        />
+      </footer>
     </React.Fragment>
   );
 }
