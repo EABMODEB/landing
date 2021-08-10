@@ -1,4 +1,5 @@
 import React from "react";
+import Botondownload from "../Components.js/Botondownload";
 
 export default function Landing() {
   // Code
@@ -8,7 +9,7 @@ export default function Landing() {
       <section></section>
       {/* Text Containers: Brandon */}
       <section></section>
-      {/* Button: Joel */}
+      {Botondownload}
       <section></section>
       {/* Carousel: Ramón */}
       <section></section>
