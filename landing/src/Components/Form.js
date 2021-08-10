@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import TextField from 'material-ui/TextField';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import FlatButton from 'material-ui/FlatButton';
 
