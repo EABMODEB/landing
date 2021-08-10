@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import TextField from 'material-ui/TextField';
-import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import FlatButton from 'material-ui/FlatButton';
@@ -21,16 +20,16 @@ class Form extends Component {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.state = {
-            name:'',
-            email:'',
-            message:''
+            nombre:'',
+            correo:'',
+            mensaje:''
         };
 
     }
     
     handleSubmit(e){
         e.preventDefault();
-        console.log('Submitted!!!', this.state.name + " - " + this.state.email + " - " + this.state.message);
+        console.log('Submitted!!!', this.state.nombre + " - " + this.state.correo + " - " + this.state.mensaje);
         
         
     }
@@ -39,28 +38,28 @@ class Form extends Component {
       <div className="bg-wrap">
         <div className="container">
           <div className="content">
-            <h2>Contact</h2>
+            <h2>Contacto</h2>
             <div className="m-c row">
                <div className="col-xs-6">
                    <MuiThemeProvider muiTheme={muiTheme}>
                    <form onSubmit={this.handleSubmit}> 
                         <TextField 
-                        hintText="Enter Name..."
+                        hintText="Ingresar nombre..."
                         value={this.state.name}
-                        onChange={e => this.setState({ name: e.target.value })}
+                        onChange={e => this.setState({ nombre: e.target.value })}
                         /><br/>
 
                         <TextField 
-                        hintText="Enter Email..."
-                        value={this.state.email}
-                        type="email"
-                        onChange={e => this.setState({ email: e.target.value })}
+                        hintText="Ingresar correo..."
+                        value={this.state.correo}
+                        type="correo"
+                        onChange={e => this.setState({ correo: e.target.value })}
                         /><br/>
 
                         <TextField 
-                        hintText="Enter Message..."
-                        value={this.state.message}
-                        onChange={e => this.setState({ message: e.target.value })}
+                        hintText="Ingresar mensaje..."
+                        value={this.state.mensaje}
+                        onChange={e => this.setState({ mensaje: e.target.value })}
                         multiLine={true}
                         /><br/>
                         
@@ -77,10 +76,10 @@ class Form extends Component {
                     </MuiThemeProvider>
                 </div>
                <div className="col-xs-6">
-                   <h4>Output</h4>
-                   <p>Name: {this.state.name} </p>
-                   <p>Email: {this.state.email} </p>
-                   <p>Message: {this.state.message} </p>
+                   <h4>Ingresar</h4>
+                   <p>Nombre: {this.state.nombre} </p>
+                   <p>correo: {this.state.correo} </p>
+                   <p>Mensaje: {this.state.mensaje} </p>
                </div>
             </div>
           </div>
