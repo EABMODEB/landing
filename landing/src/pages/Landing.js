@@ -1,6 +1,6 @@
 import React from "react";
 import Botondownload from "../Components/Botondownload";
-
+import Form from "../Components/Form";
 export default function Landing() {
   // Code
   return (
@@ -15,7 +15,7 @@ export default function Landing() {
       <section></section>
       {/* Hover images: Brandon */}
       <section></section>
-      {/* Form: Joel */}
+      <Form/>
       <section></section>
       {/* Footer: Brandon */}
       <footer></footer>
