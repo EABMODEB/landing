@@ -4,7 +4,6 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "./theme";
 import Landing from "./pages/Landing";
-import Botondownload from "./Components.js/Botondownload";
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -12,9 +11,6 @@ export default function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Landing} />
-        </Switch>
-        <Switch>
-          <Route exact path="/" component={Botondownload} />
         </Switch>
       </BrowserRouter>
     </ThemeProvider>

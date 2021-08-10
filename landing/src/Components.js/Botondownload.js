@@ -5,17 +5,23 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 
 const useStyles = makeStyles((theme) => ({
   button: {
-    background: "rgb(2,0,36)",
-    background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,69,9,1) 35%, rgba(0,212,255,1) 100%)",
+    background: "rgb(255,189,51)",
+    background: "linear-gradient(90deg, rgba(255,189,51,1) 0%, rgba(255,128,0,1) 100%)",
     margin: theme.spacing(1),
   },
+  buttoncontainer: {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column",
+      alignItems: "center",
+  }
 }));
 
 export default function Botondownload () {
   const classes = useStyles();
-
+  
   return (
-    <div>
+    <div className={classes.buttoncontainer}>
         <h2>¿Quieres conocer nuestro catálogo?</h2>
         <h2>¡Da click aquí</h2>
       <Button

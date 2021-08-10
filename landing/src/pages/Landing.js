@@ -9,7 +9,7 @@ export default function Landing() {
       <section></section>
       {/* Text Containers: Brandon */}
       <section></section>
-      {Botondownload}
+      <Botondownload/>
       <section></section>
       {/* Carousel: Ramón */}
       <section></section>
