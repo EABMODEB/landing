@@ -1,5 +1,5 @@
 import React from "react";
-import Botondownload from "../Components.js/Botondownload";
+import Botondownload from "../Components/Botondownload";
 
 export default function Landing() {
   // Code
