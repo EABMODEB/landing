@@ -15,9 +15,10 @@ export default function Landing() {
       <section></section>
       {/* Hover images: Brandon */}
       <section></section>
+      {/* Button: Joel */}
       <Botondownload />
+      {/* Form: Joel */}
       <FormApp />
-      <section></section>
       {/* Footer: Brandon */}
       <Footer />
     </React.Fragment>
