@@ -11,13 +11,12 @@ export default function Landing() {
       <section></section>
       {/* Text Containers: Brandon */}
       <section></section>
-      <section></section>
       {/* Carousel: Ramón */}
       <section></section>
       {/* Hover images: Brandon */}
       <section></section>
+      <Botondownload />
       <FormApp />
-
       <section></section>
       {/* Footer: Brandon */}
       <Footer />
