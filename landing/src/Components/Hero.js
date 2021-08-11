@@ -4,21 +4,20 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     hero: {
         width: '100%',
-        position: 'relative',
         height: '90vh',
-        backgroundImage: `url("https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/imgs%2FCasitas.png?alt=media&token=ddb88c0a-6725-41f2-a647-028c8b338da0")`,
-        backgroundPosition: '72%',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPositionY: '100%'
+        position: 'relative',
     },
-    // heroImg: {
-    //     width: '100%',
-    //     margin: '0 auto',
-    //     display: 'block',
-    //     height: '90vh',
-    //     objectFit: 'none'
-    // },
+    heroImg: {
+        width: '100%',
+        margin: '0 auto',
+        display: 'block',
+        height: '100%',
+        objectFit: 'cover',
+        objectPosition: '73%',
+        [theme.breakpoints.up('900')]: {
+            objectPosition: '0% 40%',
+        }
+    },
     heroContainer: {
         width: '100%',
         height: '100%',
@@ -34,7 +33,10 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        top: 25
+        top: 25,
+        [theme.breakpoints.up('sm')]: {
+            top: '5%',
+        }
     },
     heroLogo: {
         width: '15rem',
@@ -50,11 +52,11 @@ export default function Hero() {
     const classes = useStyles();
     return (
         <div className={classes.hero}>
-            {/* <img
+            <img
                 src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/imgs%2FCasitas.png?alt=media&token=ddb88c0a-6725-41f2-a647-028c8b338da0"
                 alt="Solar Center Hero"
                 className={classes.heroImg}
-            /> */}
+            />
             <div className={classes.heroContainer}>
                 <div className={classes.heroContent}>
                     <img
