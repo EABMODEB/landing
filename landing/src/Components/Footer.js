@@ -64,11 +64,17 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.light,
     padding: 20,
   },
+  footerIconAnchor: {
+    transition: "all .3s",
+    margin: "0 15px",
+    "&:hover": {
+      transform: "scale(1.1)",
+    },
+  },
   footerIcon: {
     color: "white",
     height: 50,
     width: 50,
-    margin: "0 15px",
   },
 }));
 
@@ -78,9 +84,21 @@ export default function Footer() {
   return (
     <footer className={classes.footer}>
       <div className={classes.footerIconsContainer}>
-        <FacebookIcon className={classes.footerIcon} />
-        <InstagramIcon className={classes.footerIcon} />
-        <WhatsAppIcon className={classes.footerIcon} />
+        <a
+          className={classes.footerIconAnchor}
+          href="https://www.facebook.com/SolarCenterMX/"
+        >
+          <FacebookIcon className={classes.footerIcon} />
+        </a>
+        <a
+          className={classes.footerIconAnchor}
+          href="https://www.instagram.com/solarcentermx/"
+        >
+          <InstagramIcon className={classes.footerIcon} />
+        </a>
+        <a className={classes.footerIconAnchor} href="#">
+          <WhatsAppIcon className={classes.footerIcon} />
+        </a>
       </div>
       <div className={classes.footerImgContainer}>
         <img
