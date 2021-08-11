@@ -6,11 +6,12 @@
 }
 
 body {
-    background-color: rgb(223, 216, 216);
+    background-color: rgb(17, 15, 15);
     font-family: 'Raleway', sans-serif;
 }
 
 main {
+    grid-column: 1 / 3;
     max-width: 800px;
     width: 90%;
     margin: auto;
@@ -18,6 +19,7 @@ main {
 }
 
 form {
+    grid-column: 1 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -27,6 +29,23 @@ form {
     form {
         grid-template-columns: 1fr;
     }
+}
+
+button {
+    border-radius: 4px;
+    background: rgb(204, 96, 8);
+    display: block;
+    margin: 0 auto;
+    grid-column: 1 / 3;
+    transition-duration: 0.4s;
+    padding: 10px 20px;
+    color: white;
+}
+
+button:hover {
+    background-color: #eea300;
+    color: white;
+      
 }
 
 label {
@@ -39,7 +58,7 @@ label {
 
 input {
     width: 100%;
-    background: #fff;
+    background: rgb(255, 254, 254);
     border-radius: 3px;
     height: 45px;
     line-height: 45px;
