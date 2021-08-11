@@ -3,6 +3,8 @@ import React from "react";
 import Botondownload from "../Components/Botondownload";
 import Footer from "../Components/Footer";
 import Form from "../Components/Form";
+import FormApp from '../Components/form/FormApp';
+
 
 export default function Landing() {
   // Code
@@ -18,7 +20,7 @@ export default function Landing() {
       <section></section>
       {/* Hover images: Brandon */}
       <section></section>
-      <Form />
+      <FormApp />
       <section></section>
       {/* Footer: Brandon */}
       <Footer />

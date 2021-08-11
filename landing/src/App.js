@@ -1,6 +1,5 @@
 //import './App.css';
-import FormApp from './form/FormApp';
-import './form/FormStyle.css'
+import './Components/form/FormStyle.css'
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
