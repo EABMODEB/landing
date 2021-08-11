@@ -12,31 +12,35 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "flex-start",
-    padding: 20,
+    flexDirection: "column",
     borderTopLeftRadius: 5,
     borderTopRightRadius: 5,
   },
   footerImgContainer: {
-    height: "200px",
-    width: "50%",
+    width: "100%",
     display: "flex",
     justifyContent: "center",
   },
   footerImg: {
-    height: "100%",
+    width: "100%",
+    maxWidth: "500px",
+    padding: "20px 20px 30px",
+    borderBottom: `2px solid ${theme.palette.background.light}`,
   },
   footerListContainer: {
-    width: "40%",
-    height: 200,
+    width: "100%",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "space-between",
+    padding: 20,
+    boxSizing: "border-box",
   },
   footerList: {
     display: "flex",
     flexDirection: "column",
     textAlign: "center",
+    marginBottom: 20,
   },
   footerListAnchor: {
     color: theme.palette.text.light,
@@ -54,17 +58,18 @@ const useStyles = makeStyles((theme) => ({
     width: 250,
   },
   footerIconsContainer: {
-    width: "10%",
-    minHeight: 200,
+    width: "100%",
     display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
+    justifyContent: "center",
     alignItems: "center",
+    backgroundColor: theme.palette.background.light,
+    padding: 20,
   },
   footerIcon: {
     color: "white",
     height: 50,
     width: 50,
+    margin: "0 15px",
   },
 }));
 
@@ -73,6 +78,11 @@ export default function Footer() {
 
   return (
     <footer className={classes.footer}>
+      <div className={classes.footerIconsContainer}>
+        <FacebookIcon className={classes.footerIcon} />
+        <InstagramIcon className={classes.footerIcon} />
+        <WhatsAppIcon className={classes.footerIcon} />
+      </div>
       <div className={classes.footerImgContainer}>
         <img
           src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2FRecurso%204.png?alt=media&token=68174d8e-0fc8-4ea8-b8bf-eb0bb377f00c"
@@ -100,12 +110,6 @@ export default function Footer() {
           Tlajomulco de Zúñiga.
         </p>
       </ul>
-
-      <div className={classes.footerIconsContainer}>
-        <FacebookIcon className={classes.footerIcon} />
-        <InstagramIcon className={classes.footerIcon} />
-        <WhatsAppIcon className={classes.footerIcon} />
-      </div>
     </footer>
   );
 }
