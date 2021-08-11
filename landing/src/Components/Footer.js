@@ -67,6 +67,7 @@ const useStyles = makeStyles((theme) => ({
   footerIconAnchor: {
     transition: "all .3s",
     margin: "0 15px",
+
     "&:hover": {
       transform: "scale(1.1)",
     },
