@@ -1,4 +1,5 @@
 import React from 'react'
+import './Styles/FormStyle.css'
 
 class FormApp extends React.Component {
 

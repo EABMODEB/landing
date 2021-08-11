@@ -1,6 +1,7 @@
 import React from "react";
 import Botondownload from "../Components/Botondownload";
 import Footer from "../Components/Footer";
+import FormApp from "../Components/FormApp";
 
 export default function Landing() {
   // Code
@@ -16,7 +17,7 @@ export default function Landing() {
       <section></section>
       {/* Hover images: Brandon */}
       <section></section>
-      
+      <FormApp/>
       <section></section>
       {/* Footer: Brandon */}
       <Footer />
