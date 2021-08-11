@@ -16,6 +16,14 @@ body {
     }
 }
 
+main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
 button {
     border-radius: 4px;
     background: rgb(204, 96, 8);
@@ -79,7 +87,7 @@ textarea {
     gap: 20px;
     width: 100%;
     padding: 20px;
-    
+
 }
 
 .area__container {
