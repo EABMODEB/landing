@@ -3,6 +3,7 @@ import Botondownload from "../Components/Botondownload";
 import Hero from "../Components/Hero"
 import Footer from "../Components/Footer";
 import FormApp from "../Components/FormApp";
+import Carousel from "../Components/Carousel"
 
 export default function Landing() {
   // Code
@@ -13,7 +14,7 @@ export default function Landing() {
       {/* Text Containers: Brandon */}
       <section></section>
       {/* Carousel: Ramón */}
-      <section></section>
+      <section><Carousel/></section>
       {/* Hover images: Brandon */}
       <section></section>
       {/* Button: Joel */}
