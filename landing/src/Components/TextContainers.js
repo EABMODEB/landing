@@ -45,7 +45,7 @@ export default function TextContainers() {
   return (
     <section className={classes.boxContainer}>
       <h2 className={classes.boxTitle}>
-        ¡Apasionados por el aprovechamiento al máximo de la naturaleza!
+      TRANSFORMANDO A MÉXICO A TRAVÉS DE LA ENERGÍA SOLAR
       </h2>
       <div className={classes.boxBox}>
         <h2 className={classes.boxBoxTitle}>
