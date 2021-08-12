@@ -1,4 +1,3 @@
-
 /* Grid Item  Container*/
 .jirApZ {
     width: 100%;
@@ -14,9 +13,11 @@
 
 
 @media (min-width: 768px) {
+    /* Main Carrousel */
     .bqyzQp {
         margin: 2rem;
     }
+    /* Grid Item  Container*/
     .jirApZ {
         width: initial;
     }

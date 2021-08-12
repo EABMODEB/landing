@@ -6,7 +6,9 @@
   font-family: 'Raleway';
   src: url('./font/RALEWAY-REGULAR.TTF');
 }
-
+:root {
+  --fondo-azul:#056a9d;
+}
 * {
   margin: 0;
   padding: 0;
