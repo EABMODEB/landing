@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     hero: {
         width: '100%',
-        height: '90vh',
+        height: '95vh',
         position: 'relative',
     },
     heroImg: {
@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
         objectFit: 'cover',
         objectPosition: '73%',
         [theme.breakpoints.up('900')]: {
-            objectPosition: '0% 40%',
+            objectPosition: '0% 37.2%',
         }
     },
     heroContainer: {
