@@ -2,23 +2,44 @@
   font-family: 'D-DIN-Bold';
   src: url('./font/D-DIN-Bold.ttf');
 }
+
 @font-face {
   font-family: 'Raleway';
   src: url('./font/RALEWAY-REGULAR.TTF');
 }
+
 :root {
-  --fondo-azul:#056a9d;
+  --fondo-azul: #056a9d;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
-  font-family: 'D-DIN-Bold' !important ;
+  font-family: 'D-DIN-Bold' !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Raleway' !important;
+}
+
+.swal-title {
+  font: bold 3rem 'Raleway' !important;
+}
+
+.swal-button-text {
+  font: 1.6rem 'Raleway' !important;
+}
+
+.swal-text {
+  font: 1.6rem 'Raleway' !important;
 }

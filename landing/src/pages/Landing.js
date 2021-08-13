@@ -12,11 +12,16 @@ import Header from '../Components/Header'
 export default function Landing() {
   // Code
   Swal.fire({
+    customClass: {
+      title: "swal-title",
+      confirmButton: "swal-button-text",
+      htmlContainer: "swal-text",
+    },
     title: "¡Sitio en mantenimiento!",
     text: "Disculpe las molestias, estamos mejorando esta página.",
     icon: "info",
     confirmButtonText: "Continuar",
-    width: 320,
+    width: 450,
     padding: "0 0 20px",
     confirmButtonColor: "#3fc3ee",
   });
