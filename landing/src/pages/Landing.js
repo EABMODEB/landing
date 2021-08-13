@@ -7,6 +7,7 @@ import Carousel from "../Components/Carousel";
 import TextContainers from "../Components/TextContainers";
 import Sucursals from "../Components/sucursals";
 import Swal from "sweetalert2";
+import Header from '../Components/Header'
 
 export default function Landing() {
   // Code
@@ -27,6 +28,7 @@ export default function Landing() {
 
   return (
     <React.Fragment>
+      <Header/>
       <Hero />
       {/* Text Containers: Brandon */}
       <TextContainers />
