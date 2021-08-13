@@ -15,28 +15,6 @@ const useStyles = makeStyles((theme) => ({
         padding: "0 .5rem",
         justifyContent: 'center'
     },
-    headerMobile: {
-        [[theme.breakpoints.up('sm')]]: {
-            display: "none"
-        },
-        display: "flex",
-        width: "100%",
-        justifyContent: "space-between",
-        alignItems: "center"
-    },
-    headerDesktop: {
-        [[theme.breakpoints.down('xs')]]: {
-            display: "none"
-        },
-        display: "flex",
-        width: "100%",
-        justifyContent: "space-between",
-        alignItems: "center"
-    },
-    headerContent: {
-        display: "flex",
-        alignItems: "center"
-    },
     headerLogo: {
         width: '54px',
         margin: '0.5rem'

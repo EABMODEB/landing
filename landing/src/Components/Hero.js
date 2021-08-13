@@ -50,7 +50,7 @@ const Hero = () => {
             onAfterChange={nextSlide => console.log("onAfterChange", nextSlide)}
             style={{
                 backgroundColor: "rgba(0, 0, 0, 0.33)",
-                marginTop:'9vh'
+                marginTop:'10vh'
             }}
             settings={{
                 slidingDuration: 250,
