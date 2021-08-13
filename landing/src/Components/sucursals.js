@@ -70,7 +70,7 @@ export default function sucursals() {
         <div className={classes.cardContainer}>
           <img
             className={classes.cardImg}
-            src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/imgs%2Fqro%20copia.jpg?alt=media&token=30820061-c29c-4fbc-b6b7-f3858c4937d4"
+            src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/imgs%2FQueretaro.jpg?alt=media&token=46e5666d-d4a4-4d25-8ba8-88814558ef8a"
             alt="Querétaro"
           />
           <div className={classes.cardTextContainer}>
@@ -80,17 +80,17 @@ export default function sucursals() {
         <div className={classes.cardContainer}>
           <img
             className={classes.cardImg}
-            src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/imgs%2Fmty%20copia.jpg?alt=media&token=fd1dd121-81f9-4ce9-b92a-4c7f7a829a1d"
-            alt="Monte Rey"
+            src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/imgs%2FMonterey.jpg?alt=media&token=9dd9f805-db29-4981-bb90-67456410659b"
+            alt="Monterrey"
           />
           <div className={classes.cardTextContainer}>
-            <h3 className={classes.cardText}>Monte Rey</h3>
+            <h3 className={classes.cardText}>Monterrey</h3>
           </div>
         </div>
         <div className={classes.cardContainer}>
           <img
             className={classes.cardImg}
-            src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/imgs%2Fmerida%20copia.jpg?alt=media&token=4ec975d4-88e7-4f90-b449-f9b191926618"
+            src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/imgs%2FMerida.jpg?alt=media&token=7a5e0b03-7af0-4adc-8abc-152f71cfffc8"
             alt="Merida"
           />
           <div className={classes.cardTextContainer}>
@@ -100,7 +100,7 @@ export default function sucursals() {
         <div className={classes.cardContainer}>
           <img
             className={classes.cardImg}
-            src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/imgs%2Fguadalajara%20copia.jpg?alt=media&token=327c4613-96f6-49f0-873e-9a1ee57e29fa"
+            src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/imgs%2FGuadalajara.jpg?alt=media&token=a52c065c-2a9d-4a03-a574-1fa627992dc6"
             alt="Guadalajara"
           />
           <div className={classes.cardTextContainer}>
@@ -110,7 +110,7 @@ export default function sucursals() {
         <div className={classes.cardContainer}>
           <img
             className={classes.cardImg}
-            src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/imgs%2Fcdmx%20copia.jpg?alt=media&token=1c1dbe88-58a2-42c9-8402-e8a925501f62"
+            src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/imgs%2FCMDX.jpg?alt=media&token=ccd3b886-5361-4ef9-a35b-fa06fe556abc"
             alt="Ciudad de México"
           />
           <div className={classes.cardTextContainer}>
