@@ -49,7 +49,8 @@ const Hero = () => {
             onChange={nextSlide => console.log("onChange", nextSlide)}
             onAfterChange={nextSlide => console.log("onAfterChange", nextSlide)}
             style={{
-                backgroundColor: "rgba(0, 0, 0, 0.33)"
+                backgroundColor: "rgba(0, 0, 0, 0.33)",
+                marginTop:'9vh'
             }}
             settings={{
                 slidingDuration: 250,
@@ -57,7 +58,7 @@ const Hero = () => {
                 shouldAutoplay: true,
                 shouldDisplayButtons: true,
                 autoplayDuration: 5000,
-                height: "95vh"
+                height: "90vh"
             }}
         >
 
