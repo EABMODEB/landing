@@ -36,7 +36,7 @@ const UseStyles = makeStyles((theme) => ({
   cardImg: {
     height: "100%",
     width: "100%",
-    transition: "all .5s ease-in-out",
+    transition: "all .3s ease-in-out",
   },
   cardTextContainer: {
     width: "100%",
@@ -49,7 +49,7 @@ const UseStyles = makeStyles((theme) => ({
     top: 0,
     left: 0,
     padding: "5px",
-    transition: "opacity .5s",
+    transition: "opacity .3s",
     "&:hover": {
       opacity: 1,
     },
