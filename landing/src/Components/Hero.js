@@ -57,78 +57,80 @@ const slide3 =
 const Hero = () => {
   const classes = useStyles();
   return (
-    <HeroSlider
-      slidingAnimation="left_to_right"
-      orientation="horizontal"
-      initialSlide={1}
-      onBeforeChange={(previousSlide, nextSlide) =>
-        console.log("onBeforeChange", previousSlide, nextSlide)
-      }
-      onChange={(nextSlide) => console.log("onChange", nextSlide)}
-      onAfterChange={(nextSlide) => console.log("onAfterChange", nextSlide)}
-      style={{
-        backgroundColor: "rgba(0, 0, 0, 0.33)",
-        marginTop: "10vh",
-      }}
-      settings={{
-        slidingDuration: 250,
-        slidingDelay: 100,
-        shouldAutoplay: true,
-        shouldDisplayButtons: true,
-        autoplayDuration: 5000,
-        height: "90vh",
-      }}
-    >
-      <Slide
-        background={{
-          backgroundImage: slide1,
-          backgroundAttachment: "relative",
-          filter: "brightness(50%)",
+    <div id="hero">
+      <HeroSlider
+        slidingAnimation="left_to_right"
+        orientation="horizontal"
+        initialSlide={1}
+        onBeforeChange={(previousSlide, nextSlide) =>
+          console.log("onBeforeChange", previousSlide, nextSlide)
+        }
+        onChange={(nextSlide) => console.log("onChange", nextSlide)}
+        onAfterChange={(nextSlide) => console.log("onAfterChange", nextSlide)}
+        style={{
+          backgroundColor: "rgba(0, 0, 0, 0.33)",
+          marginTop: "10vh",
+        }}
+        settings={{
+          slidingDuration: 250,
+          slidingDelay: 100,
+          shouldAutoplay: true,
+          shouldDisplayButtons: true,
+          autoplayDuration: 5000,
+          height: "90vh",
         }}
       >
-        <div className={classes.slideTextContainer}>
-          <Typography className={classes.slideText} variant="h3">
-            Somos el centro de distribución más completo de México.
-          </Typography>
-        </div>
-      </Slide>
+        <Slide
+          background={{
+            backgroundImage: slide1,
+            backgroundAttachment: "relative",
+            filter: "brightness(50%)",
+          }}
+        >
+          <div className={classes.slideTextContainer}>
+            <Typography className={classes.slideText} variant="h3">
+              Somos el centro de distribución más completo de México.
+            </Typography>
+          </div>
+        </Slide>
 
-      <Slide
-        background={{
-          backgroundImage: slide2,
-          backgroundAttachment: "relative",
-          filter: "brightness(50%)",
-          backgroundPosition: "center center",
-        }}
-      >
-        <div className={classes.slideTextContainer}>
-          <Typography className={classes.slideText} variant="h3">
-            Trabajamos solo con las mejores marcas y productos del mercado.
-          </Typography>
-        </div>
-      </Slide>
+        <Slide
+          background={{
+            backgroundImage: slide2,
+            backgroundAttachment: "relative",
+            filter: "brightness(50%)",
+            backgroundPosition: "center center",
+          }}
+        >
+          <div className={classes.slideTextContainer}>
+            <Typography className={classes.slideText} variant="h3">
+              Trabajamos solo con las mejores marcas y productos del mercado.
+            </Typography>
+          </div>
+        </Slide>
 
-      <Slide
-        background={{
-          backgroundImage: slide3,
-          backgroundAttachment: "relative",
-          filter: "brightness(50%)",
-          backgroundPosition: "center center",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <div className={classes.slideTextContainer}>
-          <Typography className={classes.slideText} variant="h3">
-            Estamos trabajando para ti, algo nuevo te sorprenderá.
-          </Typography>
-        </div>
-      </Slide>
+        <Slide
+          background={{
+            backgroundImage: slide3,
+            backgroundAttachment: "relative",
+            filter: "brightness(50%)",
+            backgroundPosition: "center center",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div className={classes.slideTextContainer}>
+            <Typography className={classes.slideText} variant="h3">
+              Estamos trabajando para ti, algo nuevo te sorprenderá.
+            </Typography>
+          </div>
+        </Slide>
 
-      <Nav />
-    </HeroSlider>
+        <Nav />
+      </HeroSlider>
+    </div>
   );
 };
 
