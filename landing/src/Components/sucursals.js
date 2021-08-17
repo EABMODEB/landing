@@ -58,6 +58,9 @@ const UseStyles = makeStyles((theme) => ({
 		color: theme.palette.secondary.main,
 		fontSize: "clamp(2rem, 3.3vw, 3rem)",
 	},
+	textosupremo: {
+		fontSize: '3rem !important',
+	},
 }));
 
 export default function sucursals() {
@@ -65,7 +68,7 @@ export default function sucursals() {
 
 	return (
 		<section className={classes.sucursalContainer}>
-			<h2>Sucursales y Cedis</h2>
+			<h2 className= {classes.textosupremo}>Sucursales y Cedis</h2>
 			<div className={classes.sucursalCards}>
 				<div className={classes.cardContainer}>
 					<img

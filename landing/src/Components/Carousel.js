@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     fontWeight: "bold",
     marginTop: "1rem",
+    fontSize: '3rem !important',
   },
   carouselImg: {
     width: "200px",
