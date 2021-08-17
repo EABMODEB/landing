@@ -59,30 +59,6 @@ export default function Hero() {
                 src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2FSRNE.png?alt=media&token=8e44b8d9-64f7-4aed-889a-85962cb45d18"
               />
             </Carousel.Item>
-            <Carousel.Item className={classes.gridContent}>
-              <img
-                className={classes.carouselImg}
-                alt="Seraphim"
-                src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2FSeraphim.png?alt=media&token=0e1255f3-9c60-4d58-acc2-c7e921638510"
-              />
-              <img
-                className={classes.carouselImg}
-                alt="Yassion"
-                src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2FYassion-01.png?alt=media&token=31d2c24c-c51f-4aa7-b2e6-dccde894e83d"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className={classes.carouselImg}
-                alt="ET Solar"
-                src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2FLogo%20ET.png?alt=media&token=594d8b32-4583-41be-bc21-d944ca167506"
-              />
-              <img
-                className={classes.carouselImg}
-                alt="SRNE"
-                src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2FSRNE.png?alt=media&token=8e44b8d9-64f7-4aed-889a-85962cb45d18"
-              />
-            </Carousel.Item>
             <Carousel.Item>
               <img
                 className={classes.carouselImg}
