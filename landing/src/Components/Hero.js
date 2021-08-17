@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
     textShadow: "1px 5px 80px rgba(255,255,250, 0.9)",
     flexDirection: "column",
     fontWeight: "900",
-    boxShadow: "1px 1px 15px 10px rgba(255,189,51,1) ",
     textTransform: "uppercase",
     lineHeight: "initial",
     letterSpacing: "2px",

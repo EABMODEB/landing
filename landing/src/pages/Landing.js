@@ -8,7 +8,6 @@ import TextContainers from "../Components/TextContainers";
 import Sucursals from "../Components/sucursals";
 import Swal from "sweetalert2";
 import Header from "../Components/Header";
-
 export default function Landing() {
 	// Code
 	window.onload = () => {
@@ -46,10 +45,10 @@ export default function Landing() {
 			<TextContainers />
 			{/* Carousel: Ramón */}
 			<section>
-				<Carousel />
+			<Sucursals />
 			</section>
 			{/* Hover images: Brandon */}
-			<Sucursals />
+			<Carousel />
 			{/* Button: Joel */}
 			<Botondownload />
 			{/* Form: Joel */}
