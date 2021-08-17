@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
 		flexDirection: "column",
 		justifyContent: "center",
 		alignItems: "center",
+		fontSize: '2rem !important',
 	},
 	button: {
 		backgroundImage:
