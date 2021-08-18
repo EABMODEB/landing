@@ -50,9 +50,7 @@ export default function TextContainers() {
 			<div className={classes.boxBox}>
 				<h2 className={classes.boxBoxTitle}>¿Quiénes somos en la industria fotovoltáica?</h2>
 				<p className={classes.boxBoxParagraph}>
-					Somos el referente de la distribución más amplio de la industria, buscamos transformar a México a
-					través de la energía solar, buscando alcanzar día con día nuestro objetivo: entregar diferenciadores
-					que apoyen a mejorar el desempeño de los integradores en el mercado.
+				Somos el Centro de Distribución Solar mas completo del país, buscamos junto con nuestros socios comerciales transformar a México a través de la energía solar, buscando alcanzar día con día nuestro objetivo: entregar diferenciadores que apoyen a mejorar el desempeño de los integradores en el mercado
 				</p>
 			</div>
 		</section>
