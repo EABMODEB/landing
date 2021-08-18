@@ -84,7 +84,7 @@ const Slideshow = ({ children, autoplay = true, velocidad = "500", intervalo = "
 				// Volvemos a poner el intervalo cuando saquen el cursor del slideshow
 				slideshow.current.addEventListener("mouseleave", () => {
 					intervaloSlideshow.current = setInterval(() => {
-						siguiente();
+						anterior();
 					}, intervalo);
 				});
 			}
