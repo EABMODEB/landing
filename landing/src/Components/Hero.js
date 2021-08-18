@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSlider, { Slide, Nav, OverlayContainer } from "hero-slider";
+import HeroSlider, { Slide, Nav } from "hero-slider";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 

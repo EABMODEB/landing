@@ -89,7 +89,7 @@ const Slideshow = ({ children, autoplay = true, velocidad = "500", intervalo = "
 				});
 			}
 		}
-	}, [autoplay, intervalo, siguiente]);
+	}, [autoplay, intervalo, siguiente, anterior, right]);
 
 	return (
 		<ContenedorPrincipal>
