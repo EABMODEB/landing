@@ -9,16 +9,26 @@ class FormApp extends React.Component {
       phone: "",
       mail: "",
       comments: "",
+      requireField:false,
     };
   }
 
   onChange(e) {
     this.setState({
+      requireField:false,
       [e.target.name]: e.target.value,
     });
   }
   
   send(e) {
+    if(this.state.mail === "" || 
+        this.state.name === "" || 
+        this.state.phone === "" ||
+        this.state.comments === ""){
+          this.setState({requireField:true});
+    }else{
+      console.log("Todo esta bien");
+    }
     /* await fetch("https://apilanding.growthyinvestors.com/mail.php",) */
   }
 
@@ -26,7 +36,7 @@ class FormApp extends React.Component {
     return (
       <section className="section__form--container">
         <div className="section__form">
-          <form className="form__container" action="">
+          <div className="form__container" action="">
             <h2 className="form__title">Contáctanos</h2>
             <div className="form__input">
               <label htmlFor="name">Nombre</label>
@@ -71,10 +81,14 @@ class FormApp extends React.Component {
                 placeholder="Comentarios"
               />
             </div>
+            {this.state.requireField ? (
+              <h1 className="fieldRequire">*Favor de Completar todos los campos</h1>
+            ) : null}
+
             <button className="form__button" onClick={this.send.bind(this)}>
               Enviar
             </button>
-          </form>
+          </div>
           <div className="section__img--container">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/imgs%2FFormImg.jpg?alt=media&token=1fe872ad-9fd0-4f9b-b665-8d293e177417"
