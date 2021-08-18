@@ -17,8 +17,10 @@ class FormApp extends React.Component {
       [e.target.name]: e.target.value,
     });
   }
-
-  send(e) {}
+  
+  send(e) {
+    /* await fetch("https://apilanding.growthyinvestors.com/mail.php",) */
+  }
 
   render() {
     return (
