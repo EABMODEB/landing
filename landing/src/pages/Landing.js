@@ -9,6 +9,7 @@ import Sucursals from "../Components/sucursals";
 import Swal from "sweetalert2";
 import Header from "../Components/Header";
 export default function Landing() {
+	
 	// Code
 	window.onload = () => {
 		var hero = document.getElementById("hero");
