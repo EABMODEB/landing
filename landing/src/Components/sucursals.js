@@ -58,8 +58,12 @@ const UseStyles = makeStyles((theme) => ({
 		color: theme.palette.secondary.main,
 		fontSize: "clamp(2rem, 3.3vw, 3rem)",
 	},
+	cardTextAddress: {
+		color: "white",
+		fontSize: "clamp(1rem, 2.2vw, 1.5rem)",
+	},
 	textosupremo: {
-		fontSize: '3rem !important',
+		fontSize: "3rem !important",
 	},
 }));
 
@@ -68,7 +72,7 @@ export default function sucursals() {
 
 	return (
 		<section className={classes.sucursalContainer}>
-			<h2 className= {classes.textosupremo}>Sucursales y Cedis</h2>
+			<h2 className={classes.textosupremo}>Sucursales y Cedis</h2>
 			<div className={classes.sucursalCards}>
 				<div className={classes.cardContainer}>
 					<img
@@ -77,7 +81,13 @@ export default function sucursals() {
 						alt="Guadalajara"
 					/>
 					<div className={classes.cardTextContainer}>
-						<h3 className={classes.cardText}>Guadalajara</h3>
+						<h3 className={classes.cardText}>
+							Guadalajara
+							<h4 className={classes.cardTextAddress}>
+								C. Industria Eléctrica 43A, Nueva Galicia, Parque Industrial Bugambilias, 45645 Tlajomulco de
+								Zúñiga, Jal.
+							</h4>
+						</h3>
 					</div>
 				</div>
 				<div className={classes.cardContainer}>
@@ -87,7 +97,13 @@ export default function sucursals() {
 						alt="Monterrey"
 					/>
 					<div className={classes.cardTextContainer}>
-						<h3 className={classes.cardText}>Monterrey</h3>
+						<h3 className={classes.cardText}>
+							Monterrey
+							<h4 className={classes.cardTextAddress}>
+								Parque Industria, Av. Cazadores, Sierra Madre 225, 66359 Santa Catarina, N.L. Tel: 81 1159
+								4270
+							</h4>
+						</h3>
 					</div>
 				</div>
 				<div className={classes.cardContainer}>
@@ -97,7 +113,13 @@ export default function sucursals() {
 						alt="Querétaro"
 					/>
 					<div className={classes.cardTextContainer}>
-						<h3 className={classes.cardText}>Querétaro</h3>
+						<h3 className={classes.cardText}>
+							Querétaro
+							<h4 className={classes.cardTextAddress}>
+								Avenida Peñuelas #21 Bodega A5, Fraccionamiento Industrial, San Pedrito Peñuelas I, 76148
+								Santiago de Querétaro, Qro.
+							</h4>
+						</h3>
 					</div>
 				</div>
 				<div className={classes.cardContainer}>
@@ -107,17 +129,27 @@ export default function sucursals() {
 						alt="Ciudad de México"
 					/>
 					<div className={classes.cardTextContainer}>
-						<h3 className={classes.cardText}>Ciudad de México</h3>
+						<h3 className={classes.cardText}>
+							Ciudad de México
+							<h4 className={classes.cardTextAddress}>
+								Azcapotzalco La Villa No. 988 Colonia Industrial Vallejo C.P. 02300, Delegación Azcapotzalco
+							</h4>
+						</h3>
 					</div>
 				</div>
 				<div className={classes.cardContainer}>
 					<img
 						className={classes.cardImg}
 						src="https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/imgs%2FMerida.jpg?alt=media&token=7a5e0b03-7af0-4adc-8abc-152f71cfffc8"
-						alt="Merida"
+						alt="Mérida"
 					/>
 					<div className={classes.cardTextContainer}>
-						<h3 className={classes.cardText}>Merida</h3>
+						<h3 className={classes.cardText}>
+							Mérida
+							<h4 className={classes.cardTextAddress}>
+								Calle 60 predio 477 x 55 parque industrias no contaminantes C.P. 97300 Mérida Yucatán, México
+							</h4>
+						</h3>
 					</div>
 				</div>
 			</div>
