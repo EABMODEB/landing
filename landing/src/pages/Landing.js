@@ -44,9 +44,7 @@ export default function Landing() {
 			{/* Text Containers: Brandon */}
 			<TextContainers />
 			{/* Carousel: Ramón */}
-			<section>
 			<Sucursals />
-			</section>
 			{/* Hover images: Brandon */}
 			<Carousel />
 			{/* Button: Joel */}

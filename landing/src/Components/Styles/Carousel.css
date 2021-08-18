@@ -1,32 +1,9 @@
-/* Grid Item  Container*/
-.jirApZ {
-    width: 100%;
+/* .slick-track {
+    display: grid !important;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
 }
 
-/* Grid Item */
-.bVoXXg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-@media (min-width: 768px) {
-    /* Main Carrousel */
-    .bqyzQp {
-        margin: 2rem;
-    }
-    /* Grid Item  Container*/
-    .jirApZ {
-        width: initial;
-    }
-}
-
-@media (min-width: 1200px) {
-    /* Main Carrousel */
-    .bqyzQp {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}
+.slick-slide {
+    width: 100% !important;
+} */
