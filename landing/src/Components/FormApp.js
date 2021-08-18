@@ -27,7 +27,26 @@ class FormApp extends React.Component {
         this.state.comments === ""){
           this.setState({requireField:true});
     }else{
-      console.log("Todo esta bien");
+      let options={
+        method: "POST",
+        credentials: "include",
+        header:{
+          'Access-Control-Allow-Origin':"https://apilanding.growthyinvestors.com/mail.php",
+          "Content-type": "application/json",
+        },
+        body:{
+          from:this.state.mail,
+          telephone:this.state.phone,
+          mensaje:this.state.comments,
+          name:this.state.name,
+        }
+      }
+      
+      let url="https://apilanding.growthyinvestors.com/mail.php";
+      let rest = fetch(url,options);
+      console.log(rest);
+      /*rest = await rest.json();
+      console.log("Todo esta bien");*/
     }
     /* await fetch("https://apilanding.growthyinvestors.com/mail.php",) */
   }
