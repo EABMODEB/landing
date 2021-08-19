@@ -27,14 +27,18 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     fontSize: "2rem !important",
   },
+  textbutton:{
+    color: "white",
+    textDecoration:"none"
+  },
   button: {
     backgroundImage:
       "linear-gradient(90deg, rgba(255,189,51,1) 0%, rgba(255,128,0,1) 100%), linear-gradient(90deg, rgba(255,189,51,1) 0%, rgba(255,128,0,1) 100%)",
     margin: theme.spacing(2, 0),
     borderRadius: "50px",
     padding: "10px 30px",
-    border: "double 5px transparent",
     color: "white",
+    border: "double 5px transparent",
     backgroundOrigin: "border-box",
     backgroundClip: "content-box, border-box",
     boxShadow: "inset 0 0 0 2px white, 0 0 10px 5px rgba(255,149,51,.4)",
@@ -121,7 +125,7 @@ export default function Botondownload() {
           className={classes.button}
           startIcon={<GetAppIcon />}
         >
-          <a href="https://apilanding.growthyinvestors.com/BoletosChivas.pdf">Descarga aquí</a>
+          <a className={classes.textbutton} href="https://apilanding.growthyinvestors.com/BoletosChivas.pdf">Descarga aquí</a>
         </Button>
       </div>
     </div>
