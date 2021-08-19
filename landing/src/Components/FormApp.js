@@ -30,6 +30,7 @@ class FormApp extends React.Component {
       let options={
         method: "POST",
         credentials: "include",
+        mode: 'no-cors', 
         header:{
           'Access-Control-Allow-Origin':"https://apilanding.growthyinvestors.com/mail.php",
           "Content-type": "application/json",
