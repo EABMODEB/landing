@@ -1,7 +1,16 @@
 import React, { useRef, useEffect, useCallback } from "react";
+import { ReactComponent as FlechaIzquierda } from "../assets/svg/arrow-left.svg";
+import { ReactComponent as FlechaDerecha } from "../assets/svg/arrow-right.svg";
 import styled from "styled-components";
 
-const Slideshow = ({ children, autoplay = true, velocidad = "500", intervalo = "500", right = true }) => {
+const Slideshow = ({
+	children,
+	autoplay = true,
+	velocidad = "500",
+	intervalo = "1000",
+	right = true,
+	controles = true,
+}) => {
 	const slideshow = useRef(null);
 	const intervaloSlideshow = useRef(null);
 
@@ -94,6 +103,16 @@ const Slideshow = ({ children, autoplay = true, velocidad = "500", intervalo = "
 	return (
 		<ContenedorPrincipal>
 			<ContenedorSlideshow ref={slideshow}>{children}</ContenedorSlideshow>
+			{controles && (
+				<Controles>
+					<Boton onClick={anterior}>
+						<FlechaIzquierda />
+					</Boton>
+					<Boton derecho onClick={siguiente}>
+						<FlechaDerecha />
+					</Boton>
+				</Controles>
+			)}
 		</ContenedorPrincipal>
 	);
 };
@@ -125,6 +144,45 @@ const ContenedorSlideshow = styled.div`
 		width: 33%;
 		max-width: none;
 	}
+`;
+
+const Controles = styled.div`
+	position: absolute;
+	top: 0;
+	z-index: 20;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+`;
+
+const Boton = styled.button`
+	pointer-events: all;
+	background: none;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	width: 50px;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	transition: 0.3s ease all;
+
+	path {
+		fill: #000;
+		opacity: 0.5;
+	}
+	&:hover {
+		path {
+			fill: #000;
+			opacity: 1;
+			drop-shadow(1 1px 1px #000);
+		}
+		${(props) =>
+			props.derecho
+				? `background: linear-gradient(to left, rgba(218, 227,229, 1) 50%, rgba(255, 255, 255, 0) 100%)`
+				: `background: linear-gradient(to right, rgba(218, 227,229, 1) 50%, rgba(255, 255, 255, 0) 100%)`}
+	}
+	${(props) => (props.derecho ? `right: -5px;` : `left: -5px;`)}
 `;
 
 const Slide = styled.div`
