@@ -4,7 +4,7 @@ import "./Styles/Whatsapp.css";
 
 export default function Whatsapp() {
 	return (
-		<a href="tel:3325799804">
+		<a href="https://wa.link/9dkxw0">
 			<img className="fixed__whatsapp" src={WhatsAppSvg} alt="Whatsapp" />
 		</a>
 	);
