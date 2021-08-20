@@ -28,7 +28,7 @@ class FormApp extends React.Component {
           this.setState({requireField:true});
     }else{
       const body={
-        from:this.state.mail,
+        mail:this.state.mail,
         telephone:this.state.phone,
         mensaje:this.state.comments,
         name:this.state.name,
