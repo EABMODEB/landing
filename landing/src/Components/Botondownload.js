@@ -125,7 +125,7 @@ export default function Botondownload() {
           className={classes.button}
           startIcon={<GetAppIcon />}
         >
-          <a className={classes.textbutton} href="https://apilanding.growthyinvestors.com/BoletosChivas.pdf">Descarga aquí</a>
+          <a className={classes.textbutton} href="https://solar-center.mx/Catalogo2021.pdf">Descarga aquí</a>
         </Button>
       </div>
     </div>
