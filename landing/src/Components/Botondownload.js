@@ -1,7 +1,7 @@
 import React from "react";
 import Lottie from "lottie-react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Button, Grid } from "@material-ui/core";
+import { Button, Grid, Typography } from "@material-ui/core";
 import GetAppIcon from "@material-ui/icons/GetApp";
 
 const useStyles = makeStyles((theme) => ({
@@ -27,9 +27,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     fontSize: "2rem !important",
   },
-  textbutton:{
+  textbutton: {
     color: "white",
-    textDecoration:"none"
+    textDecoration: "none",
   },
   button: {
     backgroundImage:
@@ -50,19 +50,28 @@ const useStyles = makeStyles((theme) => ({
   },
   containerImgs: {
     boxShadow: "1px 1px 20px 5px rgba(255,189,51,1)",
+    padding: "1rem",
   },
   icons: {
-    width: "100%",
+    width: "50%",
+    [theme.breakpoints.up("md")]: {
+      width: "70%",
+    },
+  },
+  textIcon: {
+    color: theme.palette.secondary.main,
+    fontWeight: 600,
+    fontSize: "1.4rem",
   },
 }));
 
 const iconsImages = {
-  img1: "https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2Ficonos%20SC_calidad.png?alt=media&token=3aa4741a-3ed3-4805-b1f6-8beba82b4a08",
-  img2: "https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2Ficonos%20SC_comercial.png?alt=media&token=403e83f9-3f4f-4edb-8991-f1117316c640",
-  img3: "https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2Ficonos%20SC_entregas.png?alt=media&token=ec27b648-e971-4ad3-aabb-7ff9286fcc3e",
-  img4: "https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2Ficonos%20SC_garantias.png?alt=media&token=840aa064-2d6f-4601-95f5-eeca763f1133",
-  img5: "https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2Ficonos%20SC_soporte.png?alt=media&token=7f45ea4d-f580-488a-b343-c3fe1816b823",
-  img6: "https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2Ficonos%20SC_stock.png?alt=media&token=c4a71690-b42c-42fb-8c1c-2eb8c5f77eb4",
+  img1: "https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2Ficonos%20SC_calidad.png?alt=media&token=b6e8de5c-78e3-442b-a265-9ff07bffa75d",
+  img2: "https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2Ficonos%20SC_comercial.png?alt=media&token=127d4f77-da07-473f-bc90-342714909621",
+  img3: "https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2Ficonos%20SC_entregas.png?alt=media&token=72dbb923-274d-4770-bc33-c074ba78ca88",
+  img4: "https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2Ficonos%20SC_garantias.png?alt=media&token=1195040e-9cf9-4565-adb3-62e1f6f296eb",
+  img5: "https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2Ficonos%20SC_soporte.png?alt=media&token=e13829a5-44b3-4b64-9251-9bda49e5456e",
+  img6: "https://firebasestorage.googleapis.com/v0/b/landing-solar-center.appspot.com/o/assets%2Ficonos%20SC_stock.png?alt=media&token=f637799c-b6c8-4b89-a31a-66dc233c44af",
 };
 
 export default function Botondownload() {
@@ -78,6 +87,9 @@ export default function Botondownload() {
               src={iconsImages.img1}
               alt="Calidad Icon"
             />
+            <Typography className={classes.textIcon}>
+              Equipos de primera calidad
+            </Typography>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <img
@@ -85,6 +97,9 @@ export default function Botondownload() {
               src={iconsImages.img2}
               alt="Calidad Icon"
             />
+            <Typography className={classes.textIcon}>
+              Capacitación comercial
+            </Typography>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <img
@@ -92,6 +107,9 @@ export default function Botondownload() {
               src={iconsImages.img3}
               alt="Calidad Icon"
             />
+            <Typography className={classes.textIcon}>
+              Entregas inmediatas
+            </Typography>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <img
@@ -99,6 +117,9 @@ export default function Botondownload() {
               src={iconsImages.img4}
               alt="Calidad Icon"
             />
+            <Typography className={classes.textIcon}>
+              Garantía de producto
+            </Typography>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <img
@@ -106,6 +127,9 @@ export default function Botondownload() {
               src={iconsImages.img5}
               alt="Calidad Icon"
             />
+            <Typography className={classes.textIcon}>
+              Asesoría y soporte técnico
+            </Typography>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <img
@@ -113,6 +137,9 @@ export default function Botondownload() {
               src={iconsImages.img6}
               alt="Calidad Icon"
             />
+            <Typography className={classes.textIcon}>
+              Stock siempre disponible
+            </Typography>
           </Grid>
         </Grid>
       </div>
@@ -125,7 +152,12 @@ export default function Botondownload() {
           className={classes.button}
           startIcon={<GetAppIcon />}
         >
-          <a className={classes.textbutton} href="https://solar-center.mx/Catalogo2021.pdf">Descarga aquí</a>
+          <a
+            className={classes.textbutton}
+            href="https://solar-center.mx/Catalogo2021.pdf"
+          >
+            Descarga aquí
+          </a>
         </Button>
       </div>
     </div>
