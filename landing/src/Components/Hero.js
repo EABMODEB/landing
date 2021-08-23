@@ -7,9 +7,9 @@ const useStyles = makeStyles((theme) => ({
 	slideText: {
 		backgroundColor: "rgba(255, 128, 0, 1)",
 		background:
-			" -webkit-linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%) , linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%)",
+			"-webkit-linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%) , linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%)",
 		backgroundImage:
-			"-webkit-gradient(linear, left top, left bottom, from(rgba(255,189,51,1)), to(rgba(255,128,0,1)))",
+			"linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%) , linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%)",
 		fontSize: "2rem",
 		"-webkit-background-clip": "text",
 		"-webkit-text-fill-color": "transparent",
@@ -30,6 +30,12 @@ const useStyles = makeStyles((theme) => ({
 			fontSize: "4rem",
 			padding: "3rem",
 		},
+		// "@supports not ((background: -webkit-linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%) , linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%) or (backgroundImage: -webkit-gradient(linear, left top, left bottom, from(rgba(255,189,51,1)), to(rgba(255,128,0,1)))))" {
+		// 	background: "none",
+		// 	color: "rgba(255, 128, 0, 1)",
+		// 	"-webkit-background-clip": "initial",
+		// 	"-webkit-text-fill-color": "initial",
+		// }
 	},
 	slideTextContainer: {
 		height: "100%",
