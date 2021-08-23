@@ -3,40 +3,9 @@ import HeroSlider, { Slide, Nav } from "hero-slider";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 
+import "./Styles/Hero.css";
+
 const useStyles = makeStyles((theme) => ({
-	slideText: {
-		backgroundColor: "rgba(255, 128, 0, 1)",
-		background:
-			"-webkit-linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%) , linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%)",
-		backgroundImage:
-			"linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%) , linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%)",
-		fontSize: "2rem",
-		"-webkit-background-clip": "text",
-		"-webkit-text-fill-color": "transparent",
-		textAlign: "center",
-		padding: "1rem",
-		display: "flex",
-		textShadow: "1px 5px 80px rgba(255,255,250, 0.9)",
-		flexDirection: "column",
-		fontWeight: "900",
-		textTransform: "uppercase",
-		lineHeight: "initial",
-		letterSpacing: "2px",
-		[theme.breakpoints.up("sm")]: {
-			fontSize: "3rem",
-			padding: "2rem",
-		},
-		[theme.breakpoints.up("md")]: {
-			fontSize: "4rem",
-			padding: "3rem",
-		},
-		// "@supports not ((background: -webkit-linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%) , linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%) or (backgroundImage: -webkit-gradient(linear, left top, left bottom, from(rgba(255,189,51,1)), to(rgba(255,128,0,1)))))" {
-		// 	background: "none",
-		// 	color: "rgba(255, 128, 0, 1)",
-		// 	"-webkit-background-clip": "initial",
-		// 	"-webkit-text-fill-color": "initial",
-		// }
-	},
 	slideTextContainer: {
 		height: "100%",
 		width: "100%",
@@ -91,7 +60,7 @@ const Hero = () => {
 					}}
 				>
 					<div className={classes.slideTextContainer}>
-						<Typography className={classes.slideText} variant="h3">
+						<Typography className="slide__text" variant="h3">
 							Somos el centro de distribución más completo de México.
 						</Typography>
 					</div>
@@ -106,7 +75,7 @@ const Hero = () => {
 					}}
 				>
 					<div className={classes.slideTextContainer}>
-						<Typography className={classes.slideText} variant="h3">
+						<Typography className="slide__text" variant="h3">
 							Trabajamos solo con las mejores marcas y productos del mercado.
 						</Typography>
 					</div>
@@ -124,7 +93,7 @@ const Hero = () => {
 					}}
 				>
 					<div className={classes.slideTextContainer}>
-						<Typography className={classes.slideText} variant="h3">
+						<Typography className="slide__text" variant="h3">
 							Estamos trabajando para ti, algo nuevo te sorprenderá.
 						</Typography>
 					</div>

@@ -1,0 +1,31 @@
+.slide__text {
+    background-color: rgba(255, 128, 0, 1);
+    background-image: linear-gradient(90deg, rgba(255, 189, 51, 1) 10%, rgba(255, 128, 0, 1) 100%), linear-gradient(90deg, rgba(255, 189, 51, 1) 10%, rgba(255, 128, 0, 1) 100%);
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    text-shadow: 1px 5px 80px rgba(255, 255, 250, 0.9);
+    flex-flow: column;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: initial;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 600px) {
+    .slide__text {
+        font-size: 3rem;
+        padding: 2rem,
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .slide__text {
+        font-size: 4rem;
+        padding: 3rem,
+    }
+}
