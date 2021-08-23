@@ -194,10 +194,18 @@ const Slide = styled.div`
 	height: 100px;
 
 	img {
-		max-width: 100%;
-		max-height: 100px;
+		box-sizing: content-box;
+		height: 100px;
+		max-height: 40px;
 		object-fit: cover;
-		padding: 20px;
+	}
+
+	img.short {
+		max-height: 30px;
+	}
+
+	img.shorter {
+		max-height: 25px;
 	}
 `;
 

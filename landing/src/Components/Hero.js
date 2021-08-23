@@ -5,8 +5,11 @@ import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
 	slideText: {
+		backgroundColor: "rgba(255, 128, 0, 1)",
 		background:
-			"-webkit-linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%), linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%)",
+			" -webkit-linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%) , linear-gradient(90deg, rgba(255,189,51,1) 10%, rgba(255,128,0,1) 100%)",
+		backgroundImage:
+			"-webkit-gradient(linear, left top, left bottom, from(rgba(255,189,51,1)), to(rgba(255,128,0,1)))",
 		fontSize: "2rem",
 		"-webkit-background-clip": "text",
 		"-webkit-text-fill-color": "transparent",

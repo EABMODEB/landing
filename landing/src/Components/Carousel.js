@@ -38,7 +38,7 @@ const Carousel = () => {
 					<img src={img1} alt="Seraphim" />
 				</Slide>
 				<Slide>
-					<img src={img2} alt="ET Solar" />
+					<img className="short" src={img2} alt="ET Solar" />
 				</Slide>
 				<Slide>
 					<img src={img3} alt="Fronius" />
@@ -53,7 +53,7 @@ const Carousel = () => {
 					<img src={img6} alt="Solis" />
 				</Slide>
 				<Slide>
-					<img src={img7} alt="Enpahse" />
+					<img className="short" src={img7} alt="Enpahse" />
 				</Slide>
 			</Slideshow>
 			<Slideshow autoplay={true} intervalo="5000" right={false}>
@@ -64,13 +64,13 @@ const Carousel = () => {
 					<img src={img9} alt="SRNE" />
 				</Slide>
 				<Slide>
-					<img src={img10} alt="Beny" />
+					<img className="shorter" src={img10} alt="Beny" />
 				</Slide>
 				<Slide>
 					<img src={img11} alt="Pylotech" />
 				</Slide>
 				<Slide>
-					<img src={img12} alt="Shurflo" />
+					<img className="short" src={img12} alt="Shurflo" />
 				</Slide>
 				<Slide>
 					<img src={img13} alt="QXPV" />
