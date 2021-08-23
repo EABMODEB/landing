@@ -56,6 +56,7 @@ const Hero = () => {
 					background={{
 						backgroundImage: slide1,
 						backgroundAttachment: "relative",
+						backgroundAnimation: "fade",
 						filter: "brightness(50%)",
 					}}
 				>
@@ -70,6 +71,7 @@ const Hero = () => {
 					background={{
 						backgroundImage: slide2,
 						backgroundAttachment: "relative",
+						backgroundAnimation: "fade",
 						filter: "brightness(50%)",
 						backgroundPosition: "center center",
 					}}
@@ -85,6 +87,7 @@ const Hero = () => {
 						backgroundImage: slide3,
 						backgroundAttachment: "relative",
 						filter: "brightness(50%)",
+						backgroundAnimation: "fade",
 						backgroundPosition: "center center",
 						display: "flex",
 						flexDirection: "column",
@@ -98,7 +101,6 @@ const Hero = () => {
 						</Typography>
 					</div>
 				</Slide>
-
 				<Nav />
 			</HeroSlider>
 		</div>
